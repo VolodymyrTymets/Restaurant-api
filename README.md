@@ -3,7 +3,7 @@
 
 ### Install npm
 npm init
-npm install --saveexpress mongoose body-parser
+npm install --save express mongoose body-parser
 npm install --save-dev nodemon eslint babel-cli babel-core babel-eslint babel-preset-es2015 babel-preset-stage-0
 
 ### configure eslint

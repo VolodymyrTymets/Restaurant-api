@@ -1,5 +1,5 @@
 import express from 'express';
-import middleware from 'middleware';
+import middleware from '../middleware';
 import initializeDb from '../db';
 import config from '../config';
 
