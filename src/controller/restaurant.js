@@ -52,8 +52,18 @@ export default ({ config, db }) => {
         if(err) {
           res.send(err);
         }
-        res.json({ message: 'Restaurant saved sucessfull'});
+        res.json({ message: 'Restaurant updated sucessfull'});
       });
+    });
+  });
+
+  // '/v1/restaurant' - Delete
+  api.delete('/:id', (req, res) => {
+    Restaurant.remove({ _id: req.params.id }, (err, restaurant) => {
+      if(err) {
+        res.send(err);
+      }
+    res.json({ message: 'Restaurant removed sucessfull'});
     });
   });
 
